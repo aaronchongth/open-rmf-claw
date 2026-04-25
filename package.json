@@ -1,0 +1,36 @@
+{
+  "name": "@open-rmf/openclaw-rmf-plugin",
+  "version": "0.1.0",
+  "description": "OpenClaw plugin for dispatching and managing Open-RMF robot tasks",
+  "type": "module",
+  "main": "index.ts",
+  "openclaw": {
+    "extensions": ["./index.ts"],
+    "compat": {
+      "pluginApi": ">=2026.3.24-beta.2"
+    }
+  },
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "typecheck": "tsc --noEmit",
+    "test:live": "tsx scripts/test-live.ts",
+    "test:live:sim": "tsx scripts/test-live.ts --sim",
+    "test:live:dispatch": "tsx scripts/test-live.ts --dispatch --sim"
+  },
+  "dependencies": {
+    "@sinclair/typebox": "^0.34.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.25.0",
+    "@types/node": "^22.0.0",
+    "eslint": "^9.25.0",
+    "typescript-eslint": "^8.31.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.1.0"
+  },
+  "license": "Apache-2.0"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rmf-tasks",
+  "name": "Open-RMF Tasks",
+  "version": "0.1.0",
+  "description": "Dispatch and manage Open-RMF robot tasks via the rmf-web API server",
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "apiServerUrl": {
+        "type": "string",
+        "description": "Base URL of the rmf-web API server (e.g. http://localhost:8000)",
+        "default": "http://localhost:8000"
+      },
+      "jwtToken": {
+        "type": "string",
+        "description": "Optional JWT bearer token for API server authentication"
+      },
+      "defaultRequester": {
+        "type": "string",
+        "description": "Default requester name for dispatched tasks",
+        "default": "openclaw_plugin"
+      },
+      "useSimTime": {
+        "type": "boolean",
+        "description": "Use simulation time (sets request/start timestamps to 0)",
+        "default": false
+      }
+    },
+    "additionalProperties": false
+  }
+}
