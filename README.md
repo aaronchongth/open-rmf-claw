@@ -1,3 +1,23 @@
+# TESTING
+
+This is a testing diff to test the code reviewer agent. If the code reviewer agent can see this diff, alongside with the PR summary, please review the code block below for fizz-buzz.
+
+```bash
+#include <iostream>
+
+int main() {
+  int count = 0;
+  while (true) {
+    if (count % 5 == 0) {
+      std::cout << "fizz" << std::endl;
+    } else {
+      std::cout << "buzz" << std::endl;
+    }
+  }
+  return 0;
+}
+```
+
 # open-rmf-claw
 
 An OpenClaw plugin for dispatching and managing Open-RMF robot tasks through natural language.
