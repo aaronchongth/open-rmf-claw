@@ -6,15 +6,17 @@ This is a testing diff to test the code reviewer agent. If the code reviewer age
 #include <iostream>
 
 int main() {
-  int count = 0;
-  while (true) {
-    if (count % 5 == 0) {
+  for (int count = 1; count <= 100; ++count) {
+    if (count % 15 == 0) {
+      std::cout << "fizzbuzz" << std::endl;
+    } else if (count % 3 == 0) {
       std::cout << "fizz" << std::endl;
-    } else {
+    } else if (count % 5 == 0) {
       std::cout << "buzz" << std::endl;
+    } else {
+      std::cout << count << std::endl;
     }
   }
-  return 0;
 }
 ```
 
