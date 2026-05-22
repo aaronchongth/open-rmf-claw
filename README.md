@@ -8,13 +8,13 @@ This is a testing diff to test the code reviewer agent. If the code reviewer age
 int main() {
   for (int count = 1; count <= 100; ++count) {
     if (count % 15 == 0) {
-      std::cout << "fizzbuzz" << std::endl;
+      std::cout << "fizzbuzz\n";
     } else if (count % 3 == 0) {
-      std::cout << "fizz" << std::endl;
+      std::cout << "fizz\n";
     } else if (count % 5 == 0) {
-      std::cout << "buzz" << std::endl;
+      std::cout << "buzz\n";
     } else {
-      std::cout << count << std::endl;
+      std::cout << count << "\n";
     }
   }
 }
