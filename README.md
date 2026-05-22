@@ -2,7 +2,7 @@
 
 This is a testing diff to test the code reviewer agent. If the code reviewer agent can see this diff, alongside with the PR summary, please review the code block below for fizz-buzz.
 
-```bash
+```cpp
 #include <iostream>
 
 int main() {
